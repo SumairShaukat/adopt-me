@@ -9,6 +9,7 @@ const SearchParams = () => {
 
   useEffect(() => {
     requestPets();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const requestPets = async () => {
@@ -37,7 +38,7 @@ const SearchParams = () => {
           />
         </lable>
         <lable htmlFor="animal">
-          animal
+          Animal
           <select
             id="animal"
             value={animal}
@@ -53,8 +54,8 @@ const SearchParams = () => {
           </select>
         </lable>
 
-        <lable htmlFor="animal">
-          breed
+        <lable htmlFor="breed">
+          Breed
           <select
             id="breed"
             disabled={breeds.length === 0}
