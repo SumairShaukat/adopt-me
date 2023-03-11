@@ -42,6 +42,7 @@ const SearchParams = () => {
           <select
             id="animal"
             value={animal}
+            key={animal.id}
             onChange={(e) => {
               setAnimal(e.target.value);
               setBreed("");
@@ -57,6 +58,7 @@ const SearchParams = () => {
         <lable htmlFor="breed">
           Breed
           <select
+            key={breed.id}
             id="breed"
             disabled={breeds.length === 0}
             value={breed}
